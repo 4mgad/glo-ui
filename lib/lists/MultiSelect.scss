@@ -1,0 +1,43 @@
+@import "../../globals/vars";
+
+.multi-select {
+	color: $font-color;
+	.bulk-select {
+		text-align: right;
+		font-size: small;
+		span {
+			font-size: small;
+			padding: 5px;
+		}
+		.select-all {
+			cursor: pointer;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.items-list {
+		background: $background-color;
+		border-radius: 5px;
+		list-style-type: none;
+		padding: 10px;
+		margin: 1px;
+		height: 250px;
+		overflow: auto;
+		.item {
+			position: relative;
+			border-bottom: 1px solid $border-color;
+			margin: 25px 0;
+			&:first-child {
+				margin-top: 15px;
+			}
+			&:last-child {
+				margin-bottom: 5px;
+			}
+		}
+	}
+	.num-of-items {
+		text-align: right;
+		font-size: small;
+	}
+}

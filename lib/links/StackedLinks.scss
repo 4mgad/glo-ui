@@ -1,0 +1,70 @@
+@import "../../globals/vars";
+
+.list-input {
+	color: $font-color;
+	list-style-type: none;
+	padding: 0;
+	border-radius: 3px;
+
+	li:first-child {
+		&::before {
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+		&::after {
+			top: 1px;
+		}
+	}
+
+	li {
+		position: relative;
+		z-index: 0;
+		padding: 2px 4px;
+		font-size: 0.9em;
+		cursor: pointer;
+		&:before {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: $green-to-blue;
+			content: '';
+			z-index: -1;
+		}
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 1px;
+			bottom: 1px;
+			right: 1px;
+			background: rgba(0, 0, 0, 1);
+			content: '';
+			/* border-radius: 3px; */
+			z-index: -1;
+		}
+		&:hover, &:active, &:focus {
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+
+	li:last-child {
+		&::after {
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+
+	}
+
+	li > a {
+		width: 100%;
+		padding: 3px 5px;
+		display: block;
+	}
+	li > a:hover {
+		text-decoration: none;
+	}
+
+}
+

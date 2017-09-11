@@ -1,0 +1,8 @@
+@import "../../globals/vars";
+
+.tooltip-popup {
+	color: $font-color;
+	padding: 5px;
+	max-height: 200px;
+	overflow: auto;
+}

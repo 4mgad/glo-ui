@@ -1,0 +1,8 @@
+@import "../../globals/vars";
+.scroll-section {
+	color: $font-color;
+	background: $background-color;
+	overflow-y: scroll;
+	padding: 0 10px;
+	border-radius: 6px;
+}

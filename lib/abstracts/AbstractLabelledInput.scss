@@ -1,0 +1,22 @@
+@import "../../globals/vars";
+
+.labelled-input {
+	margin: 12px 1px 1px 1px;
+	background: $background-color;
+	border-radius: 2px;
+	display: inline-block;
+	padding: 15px 10px 5px 5px;
+	position: relative;
+	.top-label {
+		position: absolute;
+		transform: translateY(-110%);
+		padding: 0 5px;
+		background: $container-color;
+		border: 1px solid $container-color;
+		border-radius: 3px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		max-width: calc(100% - 22px);
+		overflow: hidden;
+	}
+}

@@ -1,0 +1,59 @@
+@import "../../globals/vars";
+
+.select-box {
+	color: $font-color;
+	position: relative;
+	min-height: 120px;
+	min-width: 80px;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	.sign {
+		position: absolute;
+		top: 0;
+		right: 7px;
+		color: #fff;
+		&.none {
+			font-weight: bold;
+		}
+		&.some {
+			opacity: 0.5;
+		}
+	}
+
+	&.message-popup {
+		.popup {
+			.content {
+				overflow: hidden;
+				.multi-select {
+					height: 100%;
+					.bulk-select {
+						height: 20px;
+					}
+					.items-list {
+						margin: 0;
+						padding: 0;
+						height: calc(100% - 20px);
+						.item {
+							margin: 0;
+							padding: 4px;
+							border-bottom: 0;
+							background-color: $button-color;
+							&:first-child {
+								margin-top: 0;
+							}
+							&:nth-child(even) {
+								background-color: $primary-button-color;
+							}
+							&:last-child {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

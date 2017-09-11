@@ -1,0 +1,16 @@
+@import "../../globals/vars";
+
+.abstract-button {
+	background-color: $button-color;
+	color: $font-color;
+	border: none;
+	border-radius: 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	&.primary {
+		background-color: $primary-button-color;
+	}
+	&:disabled {
+		opacity: 0.5;
+	}
+}

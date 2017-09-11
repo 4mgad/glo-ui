@@ -1,0 +1,11 @@
+@import "../../globals/vars";
+
+.voyager {
+	color: $font-color;
+	.buttons-bar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 0;
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"name": "glo",
+	"version": "1.0.0",
+	"license": "MIT",
+	"description": "Glo UI is a set of user interface components built on top of React Javascript library.",
+	"author": "AJ",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/4mgad/glo.git"
+	},
+	"engines": {
+		"node": "8.4.*",
+		"npm": "5.4.*"
+	},
+	"scripts": {
+		"lint": "eslint ./**/*.jsx",
+		"dev": "styleguidist server",
+		"libify": "./scripts/libify.sh",
+		"build": "npm run libify && cross-env NODE_ENV=production webpack",
+		"prod": "npm run build && styleguidist build"
+	},
+	"pre-commit": "lint",
+	"dependencies": {
+		"ajfs": "^3.1.0",
+		"autoprefixer": "^7.1.4",
+		"babel-cli": "^6.26.0",
+		"babel-eslint": "^7.2.3",
+		"babel-loader": "^7.1.2",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-react-hmre": "^1.1.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"copy-webpack-plugin": "^4.0.1",
+		"cross-env": "^5.0.5",
+		"css-loader": "^0.28.7",
+		"d3": "^4.10.2",
+		"eslint": "^4.6.1",
+		"eslint-plugin-react": "^7.3.0",
+		"express": "^4.15.4",
+		"extract-text-webpack-plugin": "^3.0.0",
+		"html-webpack-plugin": "^2.30.1",
+		"loaders": "^1.1.3",
+		"node-sass": "^4.5.3",
+		"postcss-loader": "^2.0.6",
+		"prop-types": "^15.5.10",
+		"react": "^15.6.1",
+		"react-addons-test-utils": "^15.6.0",
+		"react-dom": "^15.6.1",
+		"react-frame-component": "^1.1.1",
+		"react-stockcharts": "^0.6.1",
+		"react-styleguidist": "^6.0.24",
+		"react-transform-hmr": "^1.0.4",
+		"sass-loader": "^6.0.6",
+		"webpack": "^3.5.6"
+	}
+}

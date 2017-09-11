@@ -1,0 +1,49 @@
+@import "../../globals/vars";
+.text-box {
+	color: $font-color;
+	display: inline-block;
+	margin: 0 0 22px 2px;
+	.numeric-box {
+		display: block;
+		position: relative;
+		&.money-box {
+			&:after {
+				content: "$";
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				padding: 0 2px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			input {
+				padding-left: 1em;
+			}
+		}
+		&.percent-box {
+			&:after {
+				content: "%";
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+				padding: 0 2px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			input {
+				padding-right: 1em;
+			}
+		}
+	}
+	.labelled-input {
+		input {
+			& + .error-message {
+				top: calc(100% + 6px);
+			}
+		}
+	}
+}

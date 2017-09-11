@@ -1,0 +1,70 @@
+@import "../../globals/vars";
+
+.trip {
+	color: $font-color;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	.trip-station {
+		flex-grow: 1;
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		line-height: 12px;
+		&.active {
+			.symbol {
+				background: $blue-to-green-diagonal;
+			}
+		}
+		.line {
+			position: absolute;
+			border-top: 1px solid $border-color;
+			width: 100%;
+			height: 1px;
+			top: 8px;
+		}
+		&:last-child {
+			.line {
+				display: none;
+			}
+		}
+		.symbol {
+			margin: 0 auto;
+			display: block;
+			height: 15px;
+			width: 15px;
+			border: 1px solid $font-color;
+			border-radius: 50%;
+			background: $blue-to-green-diagonal-inactive;
+			position: relative;
+			cursor: pointer;
+		}
+		.title {
+			position: absolute;
+			display: inline-block;
+			width: 60px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: x-small;
+			cursor: pointer;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.trip {
+		padding-top: 55px;
+		.trip-station {
+			.title {
+				top: 0;
+				left: 0;
+				transform: rotate(50deg) translate(-65%);
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+@import "../../globals/vars";
+
+$layout-spacing: 30px;
+
+.spread-layout {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	.row {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: $layout-spacing;
+		&:last-child {
+			margin-bottom: $layout-spacing;
+		}
+	}
+	.col {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: $layout-spacing;
+		&:last-child {
+			margin-right: $layout-spacing;
+		}
+	}
+}

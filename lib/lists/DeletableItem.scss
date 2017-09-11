@@ -1,0 +1,28 @@
+@import "../../globals/vars";
+
+.deletable-item {
+	color: $font-color;
+	position: relative;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	.item-title {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin-right: 50px;
+		line-height: 50px;
+	}
+	.delete-icon {
+		cursor: pointer;
+		position: absolute;
+		font-size: 40px;
+		color: #cf0a23;
+		right: 0;
+		top: 0;
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		text-align: center;
+	}
+}

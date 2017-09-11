@@ -1,0 +1,39 @@
+@import "../../globals/vars";
+
+.incrementer {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	.value-label {
+		text-align: center;
+	}
+
+	.controllers {
+		display: inline-block;
+		width: 80px;
+		&:after {
+			background: none;
+		}
+		.controller {
+			user-select: none;
+			text-align: center;
+			display: inline-block;
+			height: 100%;
+			width: calc(49% - 1px);
+			font-size: 1.2em;
+			color: $green;
+			line-height: 1.2em;
+			cursor: pointer;
+			background: $container-color;
+			&:first-child {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+				margin-right: 0;
+			}
+			&:last-child {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+	}
+}

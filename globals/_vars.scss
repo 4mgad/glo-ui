@@ -1,0 +1,20 @@
+$background-color: #26252D;
+$container-color: #393743;
+$font-color: #C3C3C3;
+$border-color: #74747c;
+$popup-border-color: #fbfbfb;
+$button-color: #484651;
+$primary-button-color: #26252d;
+
+$white: #fff;
+$green: #9BEE50;
+$blue: #4AC5B6;
+
+$dark-green: #698955;
+$dark-blue: #4D8074;
+
+$green-to-blue: linear-gradient(to right, $green, $blue);
+$blue-to-green: linear-gradient(to right, $blue, $green);
+
+$blue-to-green-diagonal: linear-gradient(to bottom right, $blue, $green);
+$blue-to-green-diagonal-inactive: linear-gradient(to bottom right, $dark-blue, $dark-green);

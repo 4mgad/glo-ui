@@ -1,0 +1,26 @@
+@import "../../globals/vars";
+
+.auto-complete {
+	display: inline-block;
+	input {
+		font-size: large;
+		padding: 10px 5px;
+	}
+	.items-list-wrapper {
+		z-index: 1;
+		.items-list {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: auto;
+			max-height: 160px;
+			max-width: 400px;
+			.item {
+				padding: 2px;
+				margin: 0;
+				cursor: pointer;
+				white-space: nowrap;
+			}
+		}
+	}
+}

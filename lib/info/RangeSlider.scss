@@ -1,0 +1,77 @@
+@import "../../globals/vars";
+
+.range-slider {
+	position: relative;
+	height: 100%;
+	min-height: 25px;
+	width: 100%;
+	min-width: 50px;
+	border-radius: 5px;
+	margin: 35px 1px 30px 1px;
+	.slider {
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 0%;
+		left: -3px;
+		transform: translate(0%, -25%);
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 25px solid #fff;
+		.value-label {
+			color: $font-color;
+			position: absolute;
+			transform: translate(-50%, -225%);
+			white-space: nowrap;
+		}
+	}
+	.min-label {
+		color: $font-color;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		white-space: nowrap;
+	}
+	.max-label {
+		color: $font-color;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		white-space: nowrap;
+	}
+
+	&.tracking {
+		.slider {
+			transform: translate(0%, -100%);
+		}
+	}
+
+	&.vertical {
+		margin: 30px 1px;
+		.slider {
+			top: -3px;
+			left: 100%;
+			transform: translate(-75%, 0%);
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			border-right: 25px solid #fff;
+			.value-label {
+				position: absolute;
+				transform: translate(35%, -50%);
+				white-space: nowrap;
+			}
+		}
+		.max-label {
+			position: absolute;
+			top: 0;
+			left: 0;
+			white-space: nowrap;
+			transform: translate(-0%, -100%);
+		}
+		&.tracking {
+			.slider {
+				transform: translate(0%, 0%);
+			}
+		}
+	}
+}

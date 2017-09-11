@@ -1,0 +1,91 @@
+@import "../../globals/vars";
+
+.switch {
+	user-select: none;
+	position: relative;
+	display: inline-block;
+	width: 53px;
+	height: 24px;
+	input {
+		visibility: hidden;
+	}
+
+	& > input:checked + .slider {
+		background: $green-to-blue;
+	}
+
+	& > input:checked + .slider:before {
+		left: 3px;
+	}
+
+	& > input:focus + .slider {
+		box-shadow: 0 0 1px $green;
+	}
+
+	& > input:checked + .slider:before {
+		transform: translateX(26px);
+	}
+
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $background-color;
+		transition: .4s;
+		&:before {
+			position: absolute;
+			content: "";
+			height: 100%;
+			width: 42%;
+			left: 0;
+			bottom: 0;
+			background-color: $white;
+			transition: .4s;
+		}
+
+		/* Rounded sliders */
+		&.round {
+			border-radius: 34px;
+			border: 1px solid $green;
+			&:before {
+				border-radius: 50%;
+			}
+		}
+
+		#on {
+			color: $background-color;
+			font-weight: 500;
+		}
+
+		#off {
+			color: $font-color;
+		}
+
+		span {
+			margin-top: 3px;
+			display: inline-block;
+			padding: 0 5px;
+			font-size: small;
+		}
+	}
+
+	input + .slider > #on {
+		display: none;
+	}
+
+	input:checked + .slider > #on {
+		display: block;
+	}
+
+	input + .slider > #off {
+		float: right;
+	}
+
+	input:checked + .slider > #off {
+		display: none;
+	}
+}
+

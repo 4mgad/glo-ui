@@ -1,0 +1,26 @@
+.portfolio-chart {
+	width: 100%;
+	border: none;
+	.react-stockcharts-toottip {
+		tspan {
+			font-size: small;
+		}
+	}
+	.legend {
+		text {
+			tspan {
+				font-size: small;
+				border: 1px solid red;
+			}
+		}
+		&.date {
+			text {
+				tspan {
+					&:first-child {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
