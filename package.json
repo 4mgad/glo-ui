@@ -1,12 +1,12 @@
 {
-	"name": "glo",
+	"name": "glo-ui",
 	"version": "1.0.0",
 	"license": "MIT",
 	"description": "Glo UI is a set of user interface components built on top of React Javascript library.",
 	"author": "AJ",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/4mgad/glo.git"
+		"url": "git+https://github.com/4mgad/glo-ui.git"
 	},
 	"engines": {
 		"node": "8.4.*",
