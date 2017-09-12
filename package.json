@@ -16,8 +16,7 @@
 		"lint": "eslint ./**/*.jsx",
 		"dev": "styleguidist server",
 		"libify": "./scripts/libify.sh",
-		"build": "npm run libify && cross-env NODE_ENV=production webpack",
-		"prod": "npm run build && styleguidist build"
+		"build": "npm run libify && cross-env NODE_ENV=production webpack && styleguidist build"
 	},
 	"pre-commit": "lint",
 	"dependencies": {
