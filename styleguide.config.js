@@ -2,6 +2,7 @@ module.exports = {
 	title: 'Glo UI',
 	serverPort: 4000,
 	template: 'docs/templates/index.html',
+	highlightTheme: 'monokai',
 	components: 'lib/**/[A-Z][A-Z]*.jsx',
 	styleguideDir: 'docs',
 	sections: [
