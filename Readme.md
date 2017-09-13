@@ -19,21 +19,20 @@ import {LargeButton} from 'glo-ui';
 Glo-ui provides a boiler-plate application entry point that provides some global level features, like showing/hiding global messages centered in the middle of the screen, showing tooltips upon hovering over certain elements ...etc. In order to leverage those features you just need to extend AbstractApp component and override its renderApp function as follows:
 
 Example:
-```jsx noeditor
+```jsx
 let {g} = require('./globals');
-//import g, {AbstractApp, SmallButton} from 'glo-ui';
 
 class MyApp extends AbstractApp {
   renderApp(){
     return (
-      <div style={{border: "1px solid", padding: "10px"}}>
+      <div>
         <h1>Glo UI Hello World App!</h1>
         <div>
           <SmallButton 
             title="Show Message" 
             onClick={
               () => {
-                g.showMessage({title: "Message Title", content: "Message Content"})
+                g.showMessage({title: "Hi There!", content: "Hello World!"})
               }
             }
           />
@@ -41,7 +40,7 @@ class MyApp extends AbstractApp {
             title="Show Dialog" 
             onClick={
               () => {
-                g.showDialog({title: "Dialog Title", content: "Dialog Content"})
+                g.showDialog({title: "Hi There!", content: (<h3>Hello World!</h3>)})
               }
             }
           />

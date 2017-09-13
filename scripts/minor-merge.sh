@@ -1,16 +1,13 @@
 #!/usr/bin/env bash
 
-set -e
-
 (
 	cd .. &&
-	git checkout develop;
 	npm version minor -m "release v%s";
-	git add -A && git commit -m "lock files";
-	git push;
+	git add -A && git commit -m "release files";
+	git push origin develop;
 	git push --tags;
 	git checkout master;
 	git merge develop;
-	git push;
+	git push origin master;
 	git checkout develop;
 )
