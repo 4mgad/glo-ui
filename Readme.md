@@ -26,7 +26,7 @@ class MyApp extends AbstractApp {
   renderApp(){
     return (
       <div>
-        <h1>Glo UI Hello World App!</h1>
+        <h1 style={{color: "#C3C3C3"}}>Hello World Glo UI App!</h1>
         <div>
           <SmallButton 
             title="Show Message" 
