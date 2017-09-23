@@ -5,6 +5,7 @@ module.exports = {
 	highlightTheme: 'monokai',
 	components: 'lib/**/[A-Z][A-Z]*.jsx',
 	styleguideDir: 'docs',
+	showUsage: true,
 	sections: [
 		{
 			name: 'Introduction',
