@@ -348,6 +348,7 @@
 .text-area {
   margin: 0; }
 .labelled-input {
+  color: #C3C3C3;
   margin: 12px 1px 1px 1px;
   background: #26252D;
   border-radius: 2px;

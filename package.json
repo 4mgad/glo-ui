@@ -48,7 +48,7 @@
 		"react-dom": "^15.6.1",
 		"react-frame-component": "^1.1.1",
 		"react-stockcharts": "^0.6.1",
-		"react-styleguidist": "^6.0.25",
+		"react-styleguidist": "git+https://github.com/4mgad/react-styleguidist.git",
 		"react-transform-hmr": "^1.0.4",
 		"sass-loader": "^6.0.6",
 		"webpack": "^3.6.0"

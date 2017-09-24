@@ -1,8 +1,7 @@
 Example:
 
-```jsx static
-import {AbstractButton} from 'glo-ui';
-export default class CustomButton extends AbstractButton {
+```jsx
+class CustomButton extends AbstractButton {
   getClassNames() {
     let classNames = super.getClassNames();
     classNames.push("custom-button");
@@ -10,4 +9,6 @@ export default class CustomButton extends AbstractButton {
   }
   render() {return super.render();}
 }
+
+<CustomButton title="My Button"/>
 ```

@@ -1,18 +1,10 @@
 Example:
 
-```jsx static
-import {AbstractLabelledInput} from 'glo-ui';
-export default class LabelledInput extends AbstractLabelledInput {
-  return (
-    <div className="text-box">
-      {
-        this.renderLabelledInput(
-          <span className={this.getClassNames().join(" ")}>
-            <input ... />
-          </span>
-        )
-      }
-    </div>
-  );
+```jsx
+class LabelledInput extends AbstractLabelledInput {
+  render() {
+    return this.renderLabelledInput(<input/>);
+  }  
 }
+<LabelledInput label="My Label"/>
 ```
