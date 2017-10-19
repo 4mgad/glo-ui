@@ -1,6 +1,6 @@
 {
 	"name": "glo-ui",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"license": "MIT",
 	"description": "Glo UI is a responsive user interface library built on top of React JavaScript library. It's opinionated regarding styles and initial application structure. Its styles and UI components can be used as-is to quickly put together a responsive web application that works on desktop browsers as well as mobile browsers or can be easily overridden to suit your needs.",
 	"author": "AJ",
