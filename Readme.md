@@ -1,6 +1,6 @@
 ---
 
-Glo UI is a responsive user interface library built on top of [React JavaScript library](https://facebook.github.io/react/). It's opinionated regarding styles and initial application structure. Its styles and UI components can be used as-is to quickly put together a responsive web application that works on desktop browsers as well as mobile browsers or can be easily overridden to suit your needs.
+[Glo UI](http://www.glo-ui.com/) is a responsive user interface library built on top of [React JavaScript library](https://facebook.github.io/react/). It's opinionated regarding styles and initial application structure. Its styles and UI components can be used as-is to quickly put together a responsive web application that works on desktop browsers as well as mobile browsers or can be easily overridden to suit your needs.
 
 **Installation:**
 ```jsx static
