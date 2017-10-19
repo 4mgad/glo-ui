@@ -53,6 +53,6 @@
 		"webpack": "^3.8.1"
 	},
 	"devDependencies": {
-		"pre-commit": "*"
+		"pre-commit": "^1.2.2"
 	}
 }
