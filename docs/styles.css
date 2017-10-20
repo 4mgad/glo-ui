@@ -16,48 +16,49 @@
     opacity: 0.5; }
 .small-button {
   padding: 10px 15px; }
-.message-popup .overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #26252D;
-  opacity: 0.7;
-  z-index: 999; }
-
-.message-popup .popup {
+.message-popup {
   z-index: 1000;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  padding: 10px;
-  opacity: 1;
-  height: calc(40% - 0px);
-  width: calc(30% - 0px);
-  min-height: 300px;
-  min-width: 200px; }
-  .message-popup .popup .title {
-    color: #C3C3C3;
-    height: 30px;
-    text-align: center;
-    font-size: x-large;
-    padding-bottom: 10px; }
-  .message-popup .popup .content {
-    color: #C3C3C3;
-    height: calc(100% - 90px);
-    width: calc(100% - 0px);
-    overflow: auto; }
-  .message-popup .popup .buttons {
-    height: 40px;
-    text-align: center;
-    padding-top: 10px; }
-
-.message-popup.dialog .popup {
-  height: calc(80% - 0px);
-  width: calc(70% - 0px); }
+  top: 0;
+  left: 0; }
+  .message-popup .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #26252D;
+    opacity: 0.7; }
+  .message-popup .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    padding: 10px;
+    opacity: 1;
+    height: calc(40% - 0px);
+    width: calc(30% - 0px);
+    min-height: 300px;
+    min-width: 200px; }
+    .message-popup .popup .title {
+      color: #C3C3C3;
+      height: 30px;
+      text-align: center;
+      font-size: x-large;
+      padding-bottom: 10px; }
+    .message-popup .popup .content {
+      color: #C3C3C3;
+      height: calc(100% - 90px);
+      width: calc(100% - 0px);
+      overflow: auto; }
+    .message-popup .popup .buttons {
+      height: 40px;
+      text-align: center;
+      padding-top: 10px; }
+  .message-popup.dialog .popup {
+    height: calc(80% - 0px);
+    width: calc(70% - 0px); }
 .checkbox-container {
   color: #C3C3C3;
   position: relative;

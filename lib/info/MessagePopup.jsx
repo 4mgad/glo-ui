@@ -23,18 +23,54 @@ export default class MessagePopup extends Component {
 		show: false
 	};
 
+	state = {
+		height: window.top.innerHeight,
+		width: window.top.innerWidth,
+		shown: false
+	};
+
+	componentDidMount() {
+		let {show} = this.props;
+		this.setState({shown: show});
+		window.top.addEventListener("resize", ::this.updateDimensions);
+	}
+
+	componentWillUnmount() {
+		window.top.removeEventListener("resize", ::this.updateDimensions);
+	}
+
+	componentWillReceiveProps(nextProps) {
+		let {show} = nextProps;
+		let {shown} = this.state;
+		if (show !== shown) {
+			this.setState({shown: show});
+		}
+	}
+
+	updateDimensions() {
+		this.setState({
+			height: window.top.innerHeight,
+			width: window.top.innerWidth,
+		});
+	}
+
+	hide() {
+		this.setState({shown: false});
+	}
+
 	render() {
-		let {className, title, buttons, show, children} = this.props;
+		let {className, title, buttons, children} = this.props;
+		let {shown, height, width} = this.state;
 
 		let classNames = ["message-popup"];
 		if (className) {
 			classNames.push(...className.split(" "));
 		}
 
-		if (show) {
+		if (shown) {
 			return (
-				<div className={classNames.join(" ")}>
-					<div className="overlay"></div>
+				<div className={classNames.join(" ")} style={{height, width}}>
+					<div className="overlay" onClick={::this.hide}></div>
 					<div className="popup-box popup">
 						<div className="title">{title || ""}</div>
 						<div className="content">{children || ""}</div>
