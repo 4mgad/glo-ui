@@ -24,19 +24,12 @@ export default class MessagePopup extends Component {
 	};
 
 	state = {
-		height: window.top.innerHeight,
-		width: window.top.innerWidth,
 		shown: false
 	};
 
 	componentDidMount() {
 		let {show} = this.props;
 		this.setState({shown: show});
-		window.top.addEventListener("resize", ::this.updateDimensions);
-	}
-
-	componentWillUnmount() {
-		window.top.removeEventListener("resize", ::this.updateDimensions);
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -47,20 +40,13 @@ export default class MessagePopup extends Component {
 		}
 	}
 
-	updateDimensions() {
-		this.setState({
-			height: window.top.innerHeight,
-			width: window.top.innerWidth,
-		});
-	}
-
 	hide() {
 		this.setState({shown: false});
 	}
 
 	render() {
 		let {className, title, buttons, children} = this.props;
-		let {shown, height, width} = this.state;
+		let {shown} = this.state;
 
 		let classNames = ["message-popup"];
 		if (className) {
@@ -69,7 +55,7 @@ export default class MessagePopup extends Component {
 
 		if (shown) {
 			return (
-				<div className={classNames.join(" ")} style={{height, width}}>
+				<div className={classNames.join(" ")}>
 					<div className="overlay" onClick={::this.hide}></div>
 					<div className="popup-box popup">
 						<div className="title">{title || ""}</div>
