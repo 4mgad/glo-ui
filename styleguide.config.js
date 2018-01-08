@@ -2,7 +2,6 @@ module.exports = {
 	title: 'Glo UI',
 	serverPort: 4000,
 	template: 'docs/templates/index.html',
-	highlightTheme: 'monokai',
 	components: 'lib/**/[A-Z][A-Z]*.jsx',
 	styleguideDir: 'docs',
 	showCode: true,
@@ -59,6 +58,10 @@ module.exports = {
 			components: 'lib/charts/[A-Z]*.jsx'
 		}
 	],
+	editorConfig: {
+		theme: 'monokai',
+		lineNumbers: false
+	},
 	theme: {
 		color: {
 			base: '#C3C3C3',
