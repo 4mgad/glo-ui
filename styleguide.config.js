@@ -51,16 +51,11 @@ module.exports = {
 			name: 'Page Layout',
 			content: 'lib/page/index.md',
 			components: 'lib/page/[A-Z]*.jsx'
-		},
-		{
-			name: 'Charts',
-			content: 'lib/charts/index.md',
-			components: 'lib/charts/[A-Z]*.jsx'
 		}
 	],
 	editorConfig: {
 		theme: 'monokai',
-		lineNumbers: false
+		lineNumbers: true
 	},
 	theme: {
 		color: {

@@ -1,6 +1,5 @@
 export * from './abstracts';
 export * from './buttons';
-export * from './charts';
 export * from './info';
 export * from './inputs';
 export * from './links';
