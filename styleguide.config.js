@@ -6,6 +6,10 @@ module.exports = {
 	styleguideDir: 'docs',
 	showCode: true,
 	showUsage: false,
+	editorConfig: {
+		theme: 'monokai',
+		lineNumbers: true
+	},
 	sections: [
 		{
 			name: 'Introduction',
@@ -53,10 +57,6 @@ module.exports = {
 			components: 'lib/page/[A-Z]*.jsx'
 		}
 	],
-	editorConfig: {
-		theme: 'monokai',
-		lineNumbers: true
-	},
 	theme: {
 		color: {
 			base: '#C3C3C3',

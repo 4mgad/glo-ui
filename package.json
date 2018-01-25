@@ -9,7 +9,7 @@
 		"url": "git+https://github.com/4mgad/glo-ui.git"
 	},
 	"engines": {
-		"node": "9.3.*",
+		"node": "9.4.*",
 		"npm": "5.6.*"
 	},
 	"scripts": {
@@ -47,7 +47,7 @@
 		"react": "^16.2.0",
 		"react-dom": "^16.2.0",
 		"react-frame-component": "^2.0.1",
-		"react-styleguidist": "git+https://github.com/styleguidist/react-styleguidist.git#f26d467",
+		"react-styleguidist": "^6.2.0",
 		"react-transform-hmr": "^1.0.4",
 		"sass-loader": "^6.0.6",
 		"webpack": "^3.10.0"
